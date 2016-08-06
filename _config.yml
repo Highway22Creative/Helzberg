@@ -1,13 +1,10 @@
 # Site settings
-title: Helzberg Diamonds
-description: Pages within this site are being used as a prototype for usability testing.
+title: Highway22
+description: The pages within this site are being used as a prototype for usability testing.
 destination: _site
 baseurl: /Helzberg
-url: /Helzberg
-ghroot: https://Highway22Creative.github.io
-# url: https://Highway22Creative.github.io
-# baseurl: ""
-# url: "http://localhost:4000"
+url: https://Highway22Creative.github.io
+# url: /Helzberg
 
 ###
 #
