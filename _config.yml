@@ -1,0 +1,38 @@
+# Site settings
+title: Helzberg Diamonds
+description: Pages within this site are being used as a prototype for usability testing.
+destination: _site
+baseurl: /Helzberg
+url: /Helzberg
+ghroot: https://Highway22Creative.github.io
+# url: https://Highway22Creative.github.io
+# baseurl: ""
+# url: "http://localhost:4000"
+
+###
+#
+# Items within this section are used for posts
+#
+# Posts permalink format
+# permalink: /articles/:year/:month/:title
+#
+# Excerpt separator is used on posts to set post preview content
+# excerpt_separator: <!--more-->
+#
+# Blog pagination settings
+# paginate: 5
+# paginate_path: "/blog/page:num/"
+#
+##
+
+# Build settings
+markdown: kramdown
+
+# Sass directory and minification settings
+sass:
+  sass_dir: bower_components/bootstrap-sass/assets/stylesheets
+
+  # Style setting setting
+  # style: nested (default), compact, compressed, expanded
+  # see http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style 
+  style: nested
