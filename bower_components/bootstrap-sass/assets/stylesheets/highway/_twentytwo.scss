@@ -47,3 +47,10 @@ footer {
 .mb-40 {
   margin-bottom: 40px
 }
+
+.pickup, .appointment {
+  cursor: pointer;
+  &.active {
+    cursor: default;
+  }
+}
