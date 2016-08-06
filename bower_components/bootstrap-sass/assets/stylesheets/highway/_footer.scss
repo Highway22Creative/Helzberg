@@ -5,6 +5,11 @@
 
 // Base class
 footer {
+  margin-top: 30px;
   color: #fff;
   background-color: #555;
+  p {
+    margin: 20px 0;
+    color: #ccc;
+  }
 }
