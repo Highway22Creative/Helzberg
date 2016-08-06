@@ -1,0 +1,49 @@
+//
+// Highway22
+// --------------------------------------------------
+
+.nav-tabs {
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: 30px;
+  color: #fff;
+  background-color: #555;
+  p {
+    margin: 20px 0;
+    color: #ccc;
+  }
+  &.highway {
+    background-color: transparent;
+    border-top: 1px solid #ededed;
+  }
+}
+
+.hwy-product-title {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #787878;
+  text-transform: uppercase;
+}
+
+.hwy-review {
+  p {
+    &.small {
+      margin-top: 18px;
+      .glyphicon-star {
+        color: #ffcc00; 
+      } 
+    }
+    &.lead {
+      margin-top: 10px;
+      color: #6c1c3b;
+    }
+  }
+}
+
+.mb-40 {
+  margin-bottom: 40px
+}
