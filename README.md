@@ -1,4 +1,4 @@
-Helzberg    
+Helzberg Diamonds
 =======
 
 <!--
@@ -13,7 +13,7 @@ This repository&rsquo;s gh-pages branch is published to [Highway22Creative.githu
 
 ## Logging issues
 
-For tracking and convenience, please identify issues directly within [this repository&rsquo;s issues section](https://github.com/Highway22Creative/Helzberg/issues). Issues include content additions and revisions.
+For tracking and convenience, please identify issues directly within [this projects’s issues section](https://github.com/Highway22Creative/Helzberg/issues). Issues include content additions and revisions.
 
 ## Creators
 
