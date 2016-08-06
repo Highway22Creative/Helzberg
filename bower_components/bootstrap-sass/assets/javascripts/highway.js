@@ -12,11 +12,23 @@ jQuery(function( $ ) {
     $('.panel-pickup').show();
     $('.panel-appointment').hide();
   }
-  else ($.cookie('inStore') == 'appointment'){
+  else if ($.cookie('inStore') == 'appointment'){
     $('.pickup').removeClass('active');
     $('.appointment').addClass('active');
     $('.panel-pickup').hide();
     $('.panel-appointment').show();
+  }
+  else if ($.cookie('inStore') == 'ship'){
+    $('.pickup').removeClass('active');
+    $('.appointment').removeClass('active');
+    $('.panel-pickup').hide();
+    $('.panel-appointment').hide();
+  }
+  else {
+    $('.pickup').removeClass('active');
+    $('.appointment').removeClass('active');
+    $('.panel-pickup').hide();
+    $('.panel-appointment').hide();
   }
 
   // clicking button, sets cookie to remember selection for 20 minutes
@@ -33,6 +45,13 @@ jQuery(function( $ ) {
     $('.panel-pickup').hide();
     $('.panel-appointment').fadeIn();
     $.cookie("inStore", 'appointment', { expires: date });
+  });
+    $('.ship').click(function() {
+    $('.pickup').removeClass('active');
+    $('.appointment').removeClass('active');
+    $('.panel-pickup').hide();
+    $('.panel-appointment').hide();
+    $.cookie("inStore", 'ship', { expires: date });
   });
 
 });
