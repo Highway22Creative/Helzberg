@@ -1,4 +1,12 @@
-  <header>
+  {% if page.org == "highway" %}<header>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{{ site.baseurl }}/index.html">{{ site.title }}</a>
+        </div>
+      </div>
+    </nav>
+  </header>{% else %}<header>
     <nav class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
@@ -6,4 +14,4 @@
         </div>
       </div>
     </nav>
-  </header>
+  </header>{% endif %}

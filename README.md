@@ -7,13 +7,11 @@ Helzberg Diamonds
 - Schedule an appointment to meet with an expert at a store.
 -->
 
-<!--
-This repository&rsquo;s gh-pages branch is published to [Highway22Creative.github.io/Helzberg/](http://Highway22Creative.github.io/Helzberg/).
--->
+This repo is built with [Jekyll](http://jekyllrb.com) and publicly hosted on GitHub at <https://Highway22Creative.github.io/Helzberg/>.
 
 ## Logging issues
 
-For tracking and convenience, please identify issues directly within [this projects’s issues section](https://github.com/Highway22Creative/Helzberg/issues). Issues include content additions and revisions.
+For tracking and convenience, please identify issues directly within this repo’s issues section at <https://github.com/Highway22Creative/Helzberg/issues>. Issues include content additions and revisions.
 
 ## Creators
 

@@ -4,13 +4,13 @@
 @charset "utf-8";
 
 /* path to glyphicons */
-$icon-font-path: "/bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+$icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 /* custom variables */
-//  $body-bg: red;
+$breadcrumb-separator: ">" !default;
 
 /* any style customization must be before the bootstrap import */
 @import "bootstrap";
 
 /* custom styles */
-@import "highway/footer";
+@import "highway/twentytwo";
