@@ -30,8 +30,9 @@ design: design-a
                   </div>
                   <div class="panel-pickup">
                     <p>Pickup text</p>
-                    <p style="margin-bottom: 20px;"><a href="#" data-toggle="modal" data-target=".choose-location-modal-lg">Check other locations for availability</a><br><a href="#">Learn more about Pick Up In-Store</a></p>
                     <a href="#" class="btn btn-default btn-default btn-block" role="button">APPLY &amp; CONTINUE <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+                    <p class="small" style="margin-top: 10px; line-height: 22px;"><a href="#" data-toggle="modal" data-target=".choose-location-modal-lg">Check other locations for availability</a><br><a href="#">Learn more about Pick Up In-Store</a></p>
+                    
                   </div>
                   <div class="clear-fix"></div>
                   <div class="appointment" style="margin-top: 30px;">
@@ -39,7 +40,7 @@ design: design-a
                   </div>
                   <div class="panel-appointment">
                     <p>Appointment text</p>
-                    <a href="{{ site.baseurl }}/{{ page.design }}/schedule-appointment.html" class="btn btn-default btn-default btn-block" role="button">APPLY &amp; CONTINUE <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+                    <a href="a href="#" data-toggle="modal" data-target=".day-time-modal-lg" class="btn btn-default btn-default btn-block" role="button">APPLY &amp; CONTINUE <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
                   </div>
                 </div>
               </div>
@@ -50,3 +51,59 @@ design: design-a
       <div class="row">
 {% include tabs-ring.html %}      
       </div>
+
+      <div class="modal fade choose-location-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Item to be picked up</h4>
+            </div>
+            <div class="modal-body">
+              <div class="oakparkmall">
+                <p><strong>OAK PARK MALL</strong></p>
+              </div>
+              <div class="panel-oakparkmall">
+                <address>Address</address>
+              </div>
+              <div>
+                <p><strong>STORE</strong></p>
+              </div>
+              <div class="towncenterplaza">
+                <p><strong>TOWN CENTER PLAZA</strong></p>
+              </div>
+              <div class="panel-towncenterplaza">
+                <address>Address</address>
+              </div>
+              <div>
+                <p><strong>STORE</strong></p>
+              </div>
+              <div>
+                <p><strong>STORE</strong></p>
+              </div>
+              <hr>
+              <a href="{{ site.baseurl }}/design-b/my-bag.html" class="btn btn-default btn-primary" role="button" style="margin-top: 20px;">APPLY &amp; CONTINUE <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade day-time-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Item to be viewed</h4>
+            </div>
+            <div class="modal-body">
+              STEPS:
+              <ol>
+                <li>Choose date</li>
+                <li>Choose time</li>
+                <li>Fill out form</li>
+                <li>Checkout </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>  

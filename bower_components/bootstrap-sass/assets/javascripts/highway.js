@@ -57,4 +57,25 @@ jQuery(function($) {
     });
   });
 
+
+  $('.oakparkmall').click(function() {
+    $('.oakparkmall').addClass('active');
+    $('.towncenterplaza').removeClass('active');
+    $('.panel-oakparkmall').fadeIn();
+    $('.panel-towncenterplaza').hide();
+    $.cookie("inStore", 'pickup', {
+      expires: date
+    });
+  });
+
+  $('.towncenterplaza').click(function() {
+    $('.oakparkmall').addClass('active');
+    $('.towncenterplaza').removeClass('active');
+    $('.panel-oakparkmall').hide();
+    $('.panel-towncenterplaza').fadeIn();
+    $.cookie("inStore", 'pickup', {
+      expires: date
+    });
+  });
+
 });
