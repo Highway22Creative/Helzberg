@@ -39,44 +39,12 @@ design: design-b
           <div class="well well-lg text-center" style="margin: 50px 0;">
             <h3>Schedule Appointment</h3>
             <p>schedule appointment text</p>
-            <a href="#" class="btn btn-default btn-default" role="button">GET STARTED <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
+            <a href="{{ site.baseurl }}/{{ page.design }}/schedule-appointment.html" class="btn btn-default btn-default" role="button">GET STARTED <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></a>
           </div>
         </div>
       </div>
       <div class="row">
 {% include tabs-pendant.html %}      
       </div>
-      <div class="modal fade choose-location-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              <h4 class="modal-title">Item to be picked up</h4>
-            </div>
-            <div class="modal-body">
-              <div class="oakparkmall">
-                <p><strong>OAK PARK MALL</strong></p>
-              </div>
-              <div class="panel-oakparkmall">
-                <address>Address</address>
-              </div>
-              <div>
-                <p><strong>STORE</strong></p>
-              </div>
-              <div class="towncenterplaza">
-                <p><strong>TOWN CENTER PLAZA</strong></p>
-              </div>
-              <div class="panel-towncenterplaza">
-                <address>Address</address>
-              </div>
-              <div>
-                <p><strong>STORE</strong></p>
-              </div>
-              <div>
-                <p><strong>STORE</strong></p>
-              </div>
-              <a href="{{ site.baseurl }}/design-b/my-bag.html" class="btn btn-default btn-primary" role="button" style="margin-top: 20px;">APPLY & CONTINUE <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></a>
-            </div>
-          </div>
-        </div>
-      </div>      
+
+{% include modal-location.html %}
