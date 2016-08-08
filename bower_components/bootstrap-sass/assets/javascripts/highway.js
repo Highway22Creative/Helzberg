@@ -4,17 +4,38 @@ jQuery(function($) {
   date.setTime(date.getTime() + (minutes * 60 * 1000));
   // Services
   if ($.cookie('services') == 1) {
+    $('.hwy-radio-ship').removeClass('selected');
+    $('.hwy-radio-pickup').addClass('selected');
+    $('.hwy-radio-appointment').removeClass('selected');
     $('.appointment').removeClass('active');
+    $('.panel-ship').hide();
     $('.panel-appointment').hide();
     $('.panel-pickup').show();
     $('.pickup').addClass('active');
   } else if ($.cookie('services') == 2) {
+    $('.hwy-radio-ship').removeClass('selected');
+    $('.hwy-radio-pickup').removeClass('selected');
+    $('.hwy-radio-appointment').addClass('selected');
     $('.appointment').addClass('active');
+    $('.panel-ship').hide();
     $('.panel-appointment').show();
     $('.panel-pickup').hide();
     $('.pickup').removeClass('active');
-  } else {
+  } else if ($.cookie('services') == 3) {
+    $('.hwy-radio-ship').addClass('selected');
+    $('.hwy-radio-pickup').removeClass('selected');
+    $('.hwy-radio-appointment').removeClass('selected');
     $('.appointment').removeClass('active');
+    $('.panel-ship').show();
+    $('.panel-appointment').hide();
+    $('.panel-pickup').hide();
+    $('.pickup').removeClass('active');
+  } else {
+    $('.hwy-radio-ship').removeClass('selected');
+    $('.hwy-radio-pickup').removeClass('selected');
+    $('.hwy-radio-appointment').removeClass('selected');
+    $('.appointment').removeClass('active');
+    $('.panel-ship').hide();
     $('.panel-appointment').hide();
     $('.panel-pickup').hide();
     $('.pickup').removeClass('active');
@@ -29,7 +50,11 @@ jQuery(function($) {
 
 
   $('.pickup').click(function() {
+    $('.hwy-radio-ship').removeClass('selected'); 
+    $('.hwy-radio-pickup').addClass('selected');
+    $('.hwy-radio-appointment').removeClass('selected');
     $('.appointment').removeClass('active');
+    $('.panel-ship').hide();
     $('.panel-appointment').hide();
     $('.panel-pickup').show();
     $('.pickup').addClass('active');
@@ -38,8 +63,12 @@ jQuery(function($) {
     });
   });
   $('.appointment').click(function() {
+    $('.hwy-radio-ship').removeClass('selected');
+    $('.hwy-radio-pickup').removeClass('selected');
+    $('.hwy-radio-appointment').addClass('selected');
     $('.pickup').removeClass('active');
     $('.appointment').addClass('active');
+    $('.panel-ship').hide();
     $('.panel-pickup').hide();
     $('.panel-appointment').show();
     $.cookie("services", 2, {
@@ -47,8 +76,12 @@ jQuery(function($) {
     });
   });
   $('.ship').click(function() {
+    $('.hwy-radio-ship').addClass('selected');
+    $('.hwy-radio-pickup').removeClass('selected');
+    $('.hwy-radio-appointment').removeClass('selected');
     $('.pickup').removeClass('active');
     $('.appointment').removeClass('active');
+    $('.panel-ship').show();
     $('.panel-pickup').hide();
     $('.panel-appointment').hide();
     $.cookie("services", 3, {

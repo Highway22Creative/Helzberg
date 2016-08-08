@@ -63,3 +63,40 @@ footer {
     cursor: default;
   }
 }
+
+p.hwy-radio-ship,
+p.hwy-radio-pickup,
+p.hwy-radio-appointment
+ {
+    background-image: url("../images/radio-deselected.png");
+    background-repeat: no-repeat;
+      padding: 3px 0 0 34px;
+      margin: 0 0 10px;
+      height: 26px;
+    
+    &.selected {
+      background-image: url("../images/radio-selected.png");
+    }
+}
+
+.p34 {
+  padding-left: 34px;
+}
+
+address {
+  margin-bottom: 10px;
+}
+
+.please-work-a {
+  background-image: url("../images/radio-deselected.png");
+  background-repeat: no-repeat;
+  padding: 3px 0 0 34px;
+  cursor: pointer;
+}
+
+.please-work-b {
+  background-image: url("../images/radio-selected.png");
+  background-repeat: no-repeat;
+  padding: 3px 0 0 34px;
+  cursor: pointer;
+}
